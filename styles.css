@@ -1,26 +1,8 @@
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
+/* General Styles (for larger screens and desktops) */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #fbdcdc;
-    background-image: url("background-placeholder.jpg"); /* Placeholder for background image */
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ensure background takes full height */
+    height: 100%;
+    margin: 0;
 }
 
 .birthday-card {
@@ -28,13 +10,13 @@ body {
     width: 300px;
     height: 395px;
     border: 10px solid #ef5050;
+    margin: 60px auto;
     box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5)), 
                       url("CAKE.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 .birthday-card .text {
@@ -108,7 +90,7 @@ body {
 /* Media Query for mobile devices with a max width of 600px */
 @media (max-width: 600px) {
     .birthday-card {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 20px auto;
         border-width: 5px;  /* Reduce border size for mobile */
